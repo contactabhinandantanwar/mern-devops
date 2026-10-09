@@ -1,8 +1,6 @@
 
 FROM node:24-alpine
 
-ENV PORT=5000
-
 WORKDIR /app
 
 COPY package*.json ./
@@ -10,6 +8,8 @@ COPY package*.json ./
 RUN npm ci --omit=dev
 
 COPY . .
+
+RUN apk add --no-cache curl
 
 EXPOSE 5000
 

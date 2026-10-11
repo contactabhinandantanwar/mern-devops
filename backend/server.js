@@ -15,6 +15,7 @@ app.use(express.json());
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "ok",
+    version: "1.0.1",
     service: "backend",
     database:
       mongoose.connection.readyState === 1 ? "connected" : "disconnected",

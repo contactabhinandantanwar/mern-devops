@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Welcome</h1>
-        <h2>DevOps Frontend</h2>
+        <h1>MERN-DevOps Project</h1>
+        <h2>Automated CI/CD - DevOps Frontend</h2>
         <br />
         <p>Count: {count}</p>
         <button onClick={() => setCount(count + 1)}>Increment</button>
